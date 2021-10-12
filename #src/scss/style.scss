@@ -197,9 +197,6 @@ body {
 //<ОСНОВНОЙ БЛОК>====================================================================================================
 .page {
 	flex: 1 1 auto;
-	@media (max-width: $md2+px) {
-		padding: 63px 0px 0px 0px;
-	}
 	// .page_main
 	&_main {
 		padding: 5px 0px 60px 0px;
@@ -212,14 +209,14 @@ body {
 	}
 	// .page_paydel
 	&_paydel {
-		padding: 50px 0px 58px 0px !important;
+		padding: 50px 0px 58px 0px;
 		@media (max-width: $md2+px) {
 			padding: 83px 0px 70px 0px;
 		}
 	}
 	// .page_contacts
 	&_contacts {
-		padding: 83px 0px 60px 0px !important;
+		padding: 83px 0px 60px 0px;
 		@media (min-width: $md2+px) {
 			padding: 67px 0px 100px 0px;
 		}
@@ -235,7 +232,7 @@ body {
 	}
 	// .page_help
 	&_help {
-		padding: 63px 0px 60px 0px !important;
+		padding: 63px 0px 60px 0px;
 		@media (min-width: $md2+px) {
 			padding: 6px 0px 80px 0px;
 		}
@@ -272,7 +269,7 @@ body {
 	}
 	// .page_product
 	&_product {
-		padding: 63px 0px 50px 0px !important;
+		padding: 63px 0px 50px 0px;
 		@media (min-width: $md2+px) {
 			padding: 0px 0px 100px 0px;
 		}
