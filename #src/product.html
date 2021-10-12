@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="ru">
+	@@include('_head.html',{
+	"title":"Printex - Продукт"
+	})
+	<body>
+		<div class="wrapper">
+      <div class="_preloader"></div>
+			@@include('_header.html',{})
+			<main class="page page_product">
+        <section class="page__product product _scr-item">
+          <div class="product__container _container">
+            <div class="product__header header-product">
+              <div class="header-product__icon" data-da=".header-product__text-col,479.98,first">
+                <img src="img/icons/catalog_sliced/03.svg" alt="booklet">
+              </div>
+              <div class="header-product__text-col">
+                <h1 class="header-product__title">Буклеты</h1>
+                <p class="header-product__sub-title">Имидж любой компании состоит из огромного количества деталей, качество печати берем на себя.</p>
+              </div>
+              <a href="#consultation" class="header-product__button button button_tp _popup-link">Заказать консультацию</a>
+            </div>
+            <div class="product__body body-product">
+              <div class="body-product__l product-l">
+                <div class="product-l__img _ibg">
+                  <img src="img/pictures/products/01.jpg" alt="">
+                </div>
+                <div class="product-l__action action" data-da=".body-product,991.98,last">
+                  <a href="help.html" class="action__button _icon-AI"><span>Требование к макетам</span></a>
+                  <a href="#template" class="action__button _popup-link _icon-fex"><span>Загрузить макет</span></a>
+                  <a href="#design" class="action__button _popup-link _icon-design"><span>Заказать дизайн</span></a>
+                </div>
+              </div>
+              <div class="body-product__r product-r">
+                <form action="#" class="product-r__form order-form">
+                  <div class="order-form__line">
+                    <label for="type" class="order-form__label">Выберите вид буклетов</label>
+                    <select class="type-select" name="form[type]" id="type">
+                      <option value="1">Буклет в 1 фальц</option>
+                      <option value="2">Буклет в 2 фальца</option>
+                      <option value="3" selected="selected">Буклет в 3 фальца</option>
+                    </select>
+                  </div>
+                  <div class="order-form__line">
+                    <label for="format" class="order-form__label">Выберите формат буклетов</label>
+                    <select class="format-select" name="form[format]" id="format">
+                      <option value="1">А3 (30x42 см)</option>
+                      <option value="2" selected="selected">А4 (21x30 см)</option>
+                      <option value="3">А5 (15x21 см)</option>
+                    </select>
+                  </div>
+                  <div class="order-form__line">
+                    <div class="order-form__row">
+                      <label for="quantity">Количество</label>
+                      <div class="order-form__inp-wrapper">
+                        <input id="quantity" autocomplete="off" type="text" name="form[quantity]" data-value="2000" class="input _digital" maxlength="4">
+                        <label for="quantity">шт</label>
+                      </div>
+                    </div>
+                    <div class="price">
+                      <div class="price__range"></div>
+                      <span class="price__text price__text_form">500 шт</span>
+                      <span class="price__text price__text_to">5 000 шт</span>
+                    </div>
+                  </div>
+                  <a href="#order" class="order-form__button button _popup-link">Оформить заказ</a>
+                </form>
+              </div>
+            </div>
+            <div class="product__tables-block tables">
+              <table class="tables__table table _scr-item">
+                <thead>
+                  <tr class="trow">
+                    <th class="cell">Тираж формата А4 (21х30 см.)</th>
+                    <th class="cell">500 шт.</th>
+                    <th class="cell">1000 шт.</th>
+                    <th class="cell">2500 шт.</th>
+                    <th class="cell">5000 шт.</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="trow">
+                    <td class="cell">Буклет в 1 фальц</td>
+                    <td class="cell">1 250 грн.</td>
+                    <td class="cell">1650 грн.</td>
+                    <td class="cell">2500 грн.</td>
+                    <td class="cell">4180 грн.</td>
+                  </tr>
+                  <tr class="trow">
+                    <td class="cell">Буклет в 2 фальц</td>
+                    <td class="cell">1 250 грн.</td>
+                    <td class="cell">1650 грн.</td>
+                    <td class="cell">2500 грн.</td>
+                    <td class="cell">4180 грн.</td>
+                  </tr>
+                  <tr class="trow">
+                    <td class="cell">Буклет в 3 фальц</td>
+                    <td class="cell">1 250 грн.</td>
+                    <td class="cell">1650 грн.</td>
+                    <td class="cell">2500 грн.</td>
+                    <td class="cell">4180 грн.</td>
+                  </tr>
+                </tbody>
+              </table>
+              <table class="tables__table table _scr-item">
+                <thead>
+                  <tr class="trow">
+                    <th class="cell">Тираж формата А5 (15х21 см.)</th>
+                    <th class="cell">500 шт.</th>
+                    <th class="cell">1000 шт.</th>
+                    <th class="cell">2500 шт.</th>
+                    <th class="cell">5000 шт.</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="trow">
+                    <td class="cell">Буклет в 1 фальц</td>
+                    <td class="cell">1 250 грн.</td>
+                    <td class="cell">1650 грн.</td>
+                    <td class="cell">2500 грн.</td>
+                    <td class="cell">4180 грн.</td>
+                  </tr>
+                  <tr class="trow">
+                    <td class="cell">Буклет в 2 фальц</td>
+                    <td class="cell">1 250 грн.</td>
+                    <td class="cell">1650 грн.</td>
+                    <td class="cell">2500 грн.</td>
+                    <td class="cell">4180 грн.</td>
+                  </tr>
+                  <tr class="trow">
+                    <td class="cell">Буклет в 3 фальц</td>
+                    <td class="cell">1 250 грн.</td>
+                    <td class="cell">1650 грн.</td>
+                    <td class="cell">2500 грн.</td>
+                    <td class="cell">4180 грн.</td>
+                  </tr>
+                </tbody>
+              </table>
+              <div class="tables__mob mob-tables">
+                <div class="mob-tables__block">
+                  <h4 class="mob-tables__title">Тираж формата А4 (21х30 см.)</h4>
+                  <h5 class="mob-tables__quantity">500 шт.</h5>
+                  <table class="mob-tables__table table">
+                    <tbody>
+                      <tr class="trow">
+                        <td class="cell">Буклет в 1 фальц</td>
+                        <td class="cell">1 250 грн.</td>
+                      </tr>
+                      <tr class="trow">
+                        <td class="cell">Буклет в 2 фальц</td>
+                        <td class="cell">1 250 грн.</td>
+                      </tr>
+                      <tr class="trow">
+                        <td class="cell">Буклет в 3 фальц</td>
+                        <td class="cell">1 250 грн.</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="mob-tables__block">
+                  <h4 class="mob-tables__title">Тираж формата А4 (21х30 см.)</h4>
+                  <h5 class="mob-tables__quantity">1000 шт.</h5>
+                  <table class="mob-tables__table table">
+                    <tbody>
+                      <tr class="trow">
+                        <td class="cell">Буклет в 1 фальц</td>
+                        <td class="cell">1 650 грн.</td>
+                      </tr>
+                      <tr class="trow">
+                        <td class="cell">Буклет в 2 фальц</td>
+                        <td class="cell">1 650 грн.</td>
+                      </tr>
+                      <tr class="trow">
+                        <td class="cell">Буклет в 3 фальц</td>
+                        <td class="cell">1 650 грн.</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="mob-tables__block">
+                  <h4 class="mob-tables__title">Тираж формата А4 (21х30 см.)</h4>
+                  <h5 class="mob-tables__quantity">2 500 шт.</h5>
+                  <table class="mob-tables__table table">
+                    <tbody>
+                      <tr class="trow">
+                        <td class="cell">Буклет в 1 фальц</td>
+                        <td class="cell">2 250 грн.</td>
+                      </tr>
+                      <tr class="trow">
+                        <td class="cell">Буклет в 2 фальц</td>
+                        <td class="cell">2 250 грн.</td>
+                      </tr>
+                      <tr class="trow">
+                        <td class="cell">Буклет в 3 фальц</td>
+                        <td class="cell">2 250 грн.</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+            <article class="product__content _content _scr-item">
+              <h2>Что такое буклеты?</h2>
+              <p>Буклет – небольшое печатное изделие, напечатанное на 1 листе и сфальцованное (согнутое) один, два или больше раз. Довольно распространенный размер буклета – так называемый, евробуклет: буклет А4 с двумя сгибами. Это отличное решение для директ-мейла, поскольку оно идеально подходит под размер евроконверта.
+
+              Однако перечень форматов на этом совершенно не ограничивается. Буклет А5 также является довольно популярным выбором, равно как и буклет крупного формата А3.
+
+              В отличие от листовок такого же формата, буклет дает возможность более удобно и наглядно группировать текстовый контент и изображения.</p>
+              <h2>Яркие буклеты: образцы хорошего вкуса</h2>
+              <p>Дизайн буклета для продвижения должен быть актуальным, красочным и интересным. Можно сказать, что дизайн - самая яркая уловка или идея, привлекающая внимание покупателя. Важно заинтересовать потенциального клиента прочесть содержимое и воспользоваться предлагаемыми услугами или продуктами.
+                
+                Наиболее оригинальные изделия вызывают желание показать их друзьям или поделиться фотографиями в социальных сетях, что существенно увеличивает охват. Вот почему стоит особое внимание уделить не только макету, но и выбору материалов, послепечатной обработке. </p>
+            </article>
+            <div class="product__another another-products">
+              <h3 class="another-products__title">Другая продукция</h3>
+              <div class="another-products__items">
+                <a href="product.html" class="grid-catalog__item _scr-item grid-catalog__item_blue">
+                  <span class="_linear _linear-blue"></span>
+                  <figure class="grid-catalog__figure">
+                    <figcaption class="grid-catalog__figcaption">
+                      <h5 class="grid-catalog__title">Визитки</h5>
+                      <p class="grid-catalog__sub-title">Печать визоток любой формы и сложности</p>
+                    </figcaption>
+                    <div class="grid-catalog__row">
+                      <span class="grid-catalog__button arrow-btn _icon-arrow"></span>
+                      <div class="grid-catalog__icon">
+                        <picture>
+                          <source srcset="img/icons/catalog_small/01.svg" media="(max-width: 991.98px)">
+                          <img src="img/icons/catalog/01.svg?_v=1632858366805" alt="business card">
+                        </picture>
+                        <img src="img/icons/catalog_colored/01.svg?_v=1632858366805" alt="business card" class="_colored-img">
+                      </div>
+                    </div>
+                  </figure>
+                </a>
+                <a href="product.html" class="grid-catalog__item _scr-item grid-catalog__item_purple">
+                  <span class="_linear _linear-purple"></span>
+                  <figure class="grid-catalog__figure">
+                    <figcaption class="grid-catalog__figcaption">
+                      <h5 class="grid-catalog__title">Календари</h5>
+                      <p class="grid-catalog__sub-title">Календари любых размеров с креативным дизайном</p>
+                    </figcaption>
+                    <div class="grid-catalog__row">
+                      <span class="grid-catalog__button arrow-btn _icon-arrow"></span>
+                      <div class="grid-catalog__icon">
+                        <picture>
+                          <source srcset="img/icons/catalog_small/02.svg" media="(max-width: 991.98px)">
+                          <img src="img/icons/catalog/02.svg?_v=1632858366805" alt="calendar">
+                        </picture>
+                        <img src="img/icons/catalog_colored/02.svg?_v=1632858366805" alt="calendar" class="_colored-img">
+                      </div>
+                    </div>
+                  </figure>
+                </a>
+                <a href="product.html" class="grid-catalog__item _scr-item grid-catalog__item_yellow">
+                  <span class="_linear _linear-yellow"></span>
+                  <figure class="grid-catalog__figure">
+                    <figcaption class="grid-catalog__figcaption">
+                      <h5 class="grid-catalog__title">Буклеты</h5>
+                      <p class="grid-catalog__sub-title">Большое количество форматов и видов бумаги</p>
+                    </figcaption>
+                    <div class="grid-catalog__row">
+                      <span class="grid-catalog__button arrow-btn _icon-arrow"></span>
+                      <div class="grid-catalog__icon">
+                        <picture>
+                          <source srcset="img/icons/catalog_small/03.svg" media="(max-width: 991.98px)">
+                          <img src="img/icons/catalog/03.svg?_v=1632858366805" alt="booklet">
+                        </picture>
+                        <img src="img/icons/catalog_colored/03.svg?_v=1632858366805" alt="booklet" class="_colored-img">
+                      </div>
+                    </div>
+                  </figure>
+                </a>
+                <a href="product.html" class="grid-catalog__item _scr-item grid-catalog__item_green">
+                  <span class="_linear _linear-green"></span>
+                  <figure class="grid-catalog__figure">
+                    <figcaption class="grid-catalog__figcaption">
+                      <h5 class="grid-catalog__title">Eврофлаера</h5>
+                      <p class="grid-catalog__sub-title">Цифровая печать с перфорацией</p>
+                    </figcaption>
+                    <div class="grid-catalog__row">
+                      <span class="grid-catalog__button arrow-btn _icon-arrow"></span>
+                      <div class="grid-catalog__icon">
+                        <picture>
+                          <source srcset="img/icons/catalog_small/04.svg" media="(max-width: 991.98px)">
+                          <img src="img/icons/catalog/04.svg?_v=1632858366805" alt="euroflyer">
+                        </picture>
+                        <img src="img/icons/catalog_colored/04.svg?_v=1632858366805" alt="euroflyer" class="_colored-img">
+                      </div>
+                    </div>
+                  </figure>
+                </a>
+                <a href="product.html" class="grid-catalog__item _scr-item grid-catalog__item_beige">
+                  <span class="_linear _linear-beige"></span>
+                  <figure class="grid-catalog__figure">
+                    <figcaption class="grid-catalog__figcaption">
+                      <h5 class="grid-catalog__title">Конверты</h5>
+                      <p class="grid-catalog__sub-title">Буклеты любых размеров и креативным дизайном</p>
+                    </figcaption>
+                    <div class="grid-catalog__row">
+                      <span class="grid-catalog__button arrow-btn _icon-arrow"></span>
+                      <div class="grid-catalog__icon">
+                        <picture>
+                          <source srcset="img/icons/catalog_small/05.svg" media="(max-width: 991.98px)">
+                          <img src="img/icons/catalog/05.svg?_v=1632858366805" alt="envelope">
+                        </picture>
+                        <img src="img/icons/catalog_colored/05.svg?_v=1632858366805" alt="envelope" class="_colored-img">
+                      </div>
+                    </div>
+                  </figure>
+                </a>
+                <a href="product.html" class="grid-catalog__item _scr-item grid-catalog__item_gray">
+                  <span class="_linear _linear-gray"></span>
+                  <figure class="grid-catalog__figure">
+                    <figcaption class="grid-catalog__figcaption">
+                      <h5 class="grid-catalog__title">Листовки</h5>
+                      <p class="grid-catalog__sub-title">Буклеты любых размеров и креативным дизайном</p>
+                    </figcaption>
+                    <div class="grid-catalog__row">
+                      <span class="grid-catalog__button arrow-btn _icon-arrow"></span>
+                      <div class="grid-catalog__icon">
+                        <picture>
+                          <source srcset="img/icons/catalog_small/06.svg" media="(max-width: 991.98px)">
+                          <img src="img/icons/catalog/06.svg?_v=1632858366805" alt="flyer">
+                        </picture>
+                        <img src="img/icons/catalog_colored/06.svg?_v=1632858366805" alt="flyer" class="_colored-img">
+                      </div>
+                    </div>
+                  </figure>
+                </a>
+                <a href="product.html" class="grid-catalog__item _scr-item grid-catalog__item_gray">
+                  <span class="_linear _linear-gray"></span>
+                  <figure class="grid-catalog__figure">
+                    <figcaption class="grid-catalog__figcaption">
+                      <h5 class="grid-catalog__title">Печать на Акриле</h5>
+                      <p class="grid-catalog__sub-title">Печать на орг.стекле</p>
+                    </figcaption>
+                    <div class="grid-catalog__row">
+                      <span class="grid-catalog__button arrow-btn _icon-arrow"></span>
+                      <div class="grid-catalog__icon">
+                        <picture>
+                          <source srcset="img/icons/catalog_small/07.svg" media="(max-width: 991.98px)">
+                          <img src="img/icons/catalog/07.svg?_v=1632858366805" alt="acrylic">
+                        </picture>
+                        <img src="img/icons/catalog_colored/07.svg?_v=1632858366805" alt="acrylic" class="_colored-img">
+                      </div>
+                    </div>
+                  </figure>
+                </a>
+                <a href="product.html" class="grid-catalog__item _scr-item grid-catalog__item_green">
+                  <span class="_linear _linear-green"></span>
+                  <figure class="grid-catalog__figure">
+                    <figcaption class="grid-catalog__figcaption">
+                      <h5 class="grid-catalog__title">Печать на пластике ПВХ</h5>
+                      <p class="grid-catalog__sub-title">Цифровая печать с перфорацией</p>
+                    </figcaption>
+                    <div class="grid-catalog__row">
+                      <span class="grid-catalog__button arrow-btn _icon-arrow"></span>
+                      <div class="grid-catalog__icon">
+                        <picture>
+                          <source srcset="img/icons/catalog_small/08.svg" media="(max-width: 991.98px)">
+                          <img src="img/icons/catalog/08.svg?_v=1632858366805" alt="PVC plastic">
+                        </picture>
+                        <img src="img/icons/catalog_colored/08.svg?_v=1632858366805" alt="PVC plastic" class="_colored-img">
+                      </div>
+                    </div>
+                  </figure>
+                </a>
+                <a href="product.html" class="grid-catalog__item _scr-item grid-catalog__item_beige">
+                  <span class="_linear _linear-beige"></span>
+                  <figure class="grid-catalog__figure">
+                    <figcaption class="grid-catalog__figcaption">
+                      <h5 class="grid-catalog__title">Наклейки</h5>
+                      <p class="grid-catalog__sub-title">Стикеры премиум качества на бумаге или пленке</p>
+                    </figcaption>
+                    <div class="grid-catalog__row">
+                      <span class="grid-catalog__button arrow-btn _icon-arrow"></span>
+                      <div class="grid-catalog__icon">
+                        <picture>
+                          <source srcset="img/icons/catalog_small/09.svg" media="(max-width: 991.98px)">
+                          <img src="img/icons/catalog/09.svg?_v=1632858366805" alt="sticker">
+                        </picture>
+                        <img src="img/icons/catalog_colored/09.svg?_v=1632858366805" alt="sticker" class="_colored-img">
+                      </div>
+                    </div>
+                  </figure>
+                </a>
+                <a href="product.html" class="grid-catalog__item _scr-item grid-catalog__item_purple">
+                  <span class="_linear _linear-purple"></span>
+                  <figure class="grid-catalog__figure">
+                    <figcaption class="grid-catalog__figcaption">
+                      <h5 class="grid-catalog__title">Плакаты</h5>
+                      <p class="grid-catalog__sub-title">Календари любых размеров с креативным дизайном</p>
+                    </figcaption>
+                    <div class="grid-catalog__row">
+                      <span class="grid-catalog__button arrow-btn _icon-arrow"></span>
+                      <div class="grid-catalog__icon">
+                        <picture>
+                          <source srcset="img/icons/catalog_small/10.svg" media="(max-width: 991.98px)">
+                          <img src="img/icons/catalog/10.svg?_v=1632858366805" alt="poster">
+                        </picture>
+                        <img src="img/icons/catalog_colored/10.svg?_v=1632858366805" alt="poster" class="_colored-img">
+                      </div>
+                    </div>
+                  </figure>
+                </a>
+                <a href="product.html" class="grid-catalog__item _scr-item grid-catalog__item_yellow">
+                  <span class="_linear _linear-yellow"></span>
+                  <figure class="grid-catalog__figure">
+                    <figcaption class="grid-catalog__figcaption">
+                      <h5 class="grid-catalog__title">Фотообои</h5>
+                      <p class="grid-catalog__sub-title">Большое количество форматов и видов бумаги</p>
+                    </figcaption>
+                    <div class="grid-catalog__row">
+                      <span class="grid-catalog__button arrow-btn _icon-arrow"></span>
+                      <div class="grid-catalog__icon">
+                        <picture>
+                          <source srcset="img/icons/catalog_small/11.svg" media="(max-width: 991.98px)">
+                          <img src="img/icons/catalog/11.svg?_v=1632858366805" alt="wallpaper">
+                        </picture>
+                        <img src="img/icons/catalog_colored/11.svg?_v=1632858366805" alt="wallpaper" class="_colored-img">
+                      </div>
+                    </div>
+                  </figure>
+                </a>
+                <a href="product.html" class="grid-catalog__item _scr-item grid-catalog__item_blue">
+                  <span class="_linear _linear-blue"></span>
+                  <figure class="grid-catalog__figure">
+                    <figcaption class="grid-catalog__figcaption">
+                      <h5 class="grid-catalog__title">Широкоформатная печать</h5>
+                      <p class="grid-catalog__sub-title">Печать визоток любой формы и сложности</p>
+                    </figcaption>
+                    <div class="grid-catalog__row">
+                      <span class="grid-catalog__button arrow-btn _icon-arrow"></span>
+                      <div class="grid-catalog__icon">
+                        <picture>
+                          <source srcset="img/icons/catalog_small/12.svg" media="(max-width: 991.98px)">
+                          <img src="img/icons/catalog/12.svg?_v=1632858366805" alt="large format printing">
+                        </picture>
+                        <img src="img/icons/catalog_colored/12.svg?_v=1632858366805" alt="large format printing" class="_colored-img">
+                      </div>
+                    </div>
+                  </figure>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+			</main>
+			@@include('_footer.html',{})
+		</div>
+		@@include('_popup.html',{})
+		@@include('_js.html',{})
+	</body>
+</html>

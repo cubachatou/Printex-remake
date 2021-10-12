@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+	@@include('_head.html',{
+	"title":"Printex - Оплата и доставка"
+	})
+	<body>
+		<div class="wrapper _bot">
+      <div class="_preloader"></div>
+			@@include('_header.html',{})
+			<main class="page page_paydel">
+        <section class="page__paydel paydel _scr-item">
+          <div class="paydel__container _container">
+            <div class="paydel__inner">
+              <div class="paydel__delivery delivery">
+                <div class="delivery__block">
+                  <h2 class="delivery__title">Доставка</h2>
+                  <h3 class="delivery__pickup">Самовывоз со склада</h3>
+                  <p class="delivery__text">Самовывоз осуществляется с Пн по Сб с 9:00 до 19:00 с нашей производственной площадки:<br> г. Киев, ул. Ивана Выговского, 13</p>
+                </div>
+                <div class="delivery__block">
+                  <h3 class="delivery__delivery">Доставка на любое отделение по Украине компанией- перевозчиком</h3>
+                  <ul class="delivery__list _disc-list">
+                    <li class="delivery__item">Передача заказов в компанию-перевозчик осуществляется по готовности заказов;</li>
+                    <li class="delivery__item">Доставка оплачивается вами при получении;</li>
+                    <li class="delivery__item">С помощью доставки «Нова Пошта», Вы можете получить товар даже в самых отдаленных уголках Украины.В среднем, доставка занимает 1-3 дня.</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="paydel__payment payment">
+                <h2 class="payment__title">Оплата</h2>
+                <p class="payment__text">Кроме удобных способов доставки заказов, мы предлагаем несколько вариантов их оплаты:</p>
+                <ul class="payment__list _disc-list">
+                  <li class="payment__item">VISA/MASTERCARD - оплата банковской картой через систему электронных платежей;</li>
+                  <li class="payment__item">Приват24 - самый распространенный интернет-банкинг Инструкция как оплатить</li>
+                  <li class="payment__item">Терминалы ПриватБанка - оплата наличными в любом терминале ПриватБанка;</li>
+                  <li class="payment__item">Безналичная форма оплаты для юридических лиц</li>
+                </ul>
+              </div>
+            </div>
+            <div class="paydel__info info-paydel">
+              <h3 class="info-paydel__title">Важно знать и не забывать:</h3>
+              <p class="info-paydel__text">В работу принимаются файлы трех типов: растровые (TIFF, JPEG) и векторные (PDF). Если продукт с Гибридным выборочным лаком - в работу принимается только PDF.</p>
+            </div>
+          </div>
+        </section>
+			</main>
+			@@include('_footer.html',{})
+		</div>
+		@@include('_popup.html',{})
+		@@include('_js.html',{})
+	</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+	@@include('_head.html',{
+	"title":"Printex - Контакты"
+	})
+	<body>
+		<div class="wrapper _bot">
+      <div class="_preloader"></div>
+			@@include('_header.html',{})
+			<main class="page page_contacts _scr-item">
+        <section class="page__contacts contacts">
+          <div class="contacts__container _container">
+            <div class="contacts__content">
+              <h2 class="contacts__title">Контакты</h2>
+              <div class="footer__contacts contacts-footer">
+                <h3 class="contacts-footer__office">Центральный Офис</h3>
+                <a href="https://goo.gl/maps/e71vYkiTJtDvnoDd9" class="contacts-footer__address">г.Херсон, ул.Богородицкая (Краснофлотская) 17 Бизнес-Центр №2, офис 405</a>
+                <h3 class="contacts__mobile-number _icon-phone">Мобильный номер</h3>
+                <a href="tel:+380958100309" class="contacts-footer__phone _phone-number"><span>(095) <b>810 03 09</b></span></a>
+                <div class="contacts-footer__bot-row">
+                  <span class="contacts-footer__schedule">Пн-Нд: 9:00 - 20:00</span>
+                </div>
+              </div>
+            </div>
+            <div class="contacts__map" id="map">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7749.660709259204!2d32.60934877475952!3d46.62836589191585!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c41acb50a3348f%3A0xfeccb7bbe26b4b42!2z0YPQuy4g0JHQvtCz0L7RgNC-0LTQuNGG0LrQsNGPLCAxNywg0KXQtdGA0YHQvtC9LCDQpdC10YDRgdC-0L3RgdC60LDRjyDQvtCx0LvQsNGB0YLRjCwgNzMwMDk!5e0!3m2!1sru!2sua!4v1633345193863!5m2!1sru!2sua" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+          </div>
+        </section>
+        <section class="page__questions questions">
+          <div class="questions__container _container">
+            <h2 class="questions__title">Остались вопросы?</h2>
+            <p class="questions__text">Оставте нам свои данные и наш менеджер с вами свяжеться в максимально короткий срок.</p>
+            <form class="questions__form contact-form" action="#" data-message="complete" data-test>
+              <div class="form__row">
+                <div class="form__line">
+                  <label for="name" class="form__label">Ваше имя</label>
+                  <input class="form__input input _req" id="name" autocomplete="off" type="text" name="form[name]" data-error="" data-value="Введите ваше имя">
+                </div>
+                <div class="form__line">
+                  <label for="tel" class="form__label">Ваш номер телефона</label>
+                  <input class="form__input input _req _phone" id="tel" autocomplete="off" type="tel" name="form[tel]" data-error="" data-value="+380 ( - - ) - - -  - -  - - ">
+                </div>
+                <button type="submit" class="form__button button">Отправить</button>
+              </div>
+            </form>
+          </div>
+        </section>
+			</main>
+			@@include('_footer.html',{})
+		</div>
+		@@include('_popup.html',{})
+		@@include('_js.html',{})
+	</body>
+</html>

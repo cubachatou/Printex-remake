@@ -1,0 +1,313 @@
+//<FORM ()>====================================================================================================
+.form {
+	&__row {
+		display: flex;
+		align-items: flex-end;
+		justify-content: space-between;
+		@media (max-width: $md2+px) {
+			flex-direction: column;
+		}
+	}
+	&__column {
+	}
+	&__line {
+		&:not(:last-child) {
+			@media (min-width: $md2+px) {
+				margin: 0px 10px 0px 0px;
+			}
+		}
+	}
+	&__input {
+	}
+	&__button.button {
+		min-height: 62px;
+		padding: 0px 59.63px;
+	}
+	&__error {
+	}
+	&__label {
+		@include adaptiv-value("font-size", 18, 14, 1);
+		line-height: 2;
+		& + input {
+			margin: 5px 0px 0px 0px;
+		}
+	}
+}
+
+//</FORM>====================================================================================================
+
+//<BUTTONS (a.btn+tab)>====================================================================================================
+.button {
+	flex-shrink: 0;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 48px;
+	@include adaptiv-value("padding-left", 24, 12, 1);
+	@include adaptiv-value("padding-right", 24, 12, 1);
+	font-weight: 700;
+	font-family: 12px;
+	font-size: 12px;
+	letter-spacing: 0.2em;
+	text-transform: uppercase;
+	border: 1px solid $mainColor;
+	background-color: $mainColor;
+	color: $additionalColor;
+	transition: all 0.3s ease 0s;
+	@media (any-hover: hover) {
+		&:hover {
+			background-color: $additionalColor;
+			border-color: $additionalColor;
+			color: $mainColor;
+			box-shadow: 0px 0px 2px black;
+		}
+	}
+	&_tp {
+		background-color: transparent;
+		color: $mainColor;
+		@include adaptiv-value("font-size", 12, 10, 1);
+		@media (any-hover: hover) {
+			&:hover {
+				background-color: $mainColor;
+				border-color: $mainColor;
+				color: $additionalColor;
+			}
+		}
+	}
+	@media (max-width: $md4+px) {
+		width: 100%;
+	}
+}
+//<SELECT (sel+tab)>====================================================================================================
+.select {
+	position: relative;
+	// .select__item
+	&__item {
+		position: relative;
+		margin: 5px 0px 0px 0px;
+	}
+	// .select__title
+	&__title {
+		color: #000;
+		border: 1px solid #b3b3b3;
+		background-color: #fff;
+		cursor: pointer;
+	}
+	// .select__value
+	&__value {
+		display: flex;
+		font-size: 18px;
+		height: 56px;
+		padding: 0px 25px;
+		align-items: center;
+		justify-content: space-between;
+		flex-direction: row-reverse;
+		@media (min-width: $md1+px) {
+			height: 62px;
+		}
+		span {
+			height: 1em;
+			overflow: hidden;
+			display: -webkit-box;
+			-webkit-line-clamp: 1;
+			-webkit-box-orient: vertical;
+		}
+		&:before {
+			content: "";
+			display: inline-block;
+			transition: all 0.4s ease 0s;
+			@include adaptiv-value("width", 24, 14, 1);
+			height: 12px;
+			background: url("../img/icons/select.svg") center / 100% no-repeat;
+		}
+	}
+	&__input {
+		width: 100%;
+		background-color: transparent;
+		height: 100%;
+	}
+	// .select__options
+	&__options {
+		color: $mainColor;
+		position: absolute;
+		top: 58px;
+		left: 0;
+		min-width: 100%;
+		background-color: #fff;
+		border: 1px solid #b3b3b3;
+		border-top: 0;
+		font-size: 18px;
+		@media (max-width: $md2+px) {
+			font-size: 18px;
+		}
+		@media (min-width: $md1+px) {
+			top: 64px;
+		}
+	}
+	// .select__option
+	&__option {
+		cursor: pointer;
+		padding: 19px 25px;
+		margin: 0px 0px 0px 0px;
+		@media (any-hover: hover) {
+			&:hover {
+				background-color: #d9d9d9;
+			}
+		}
+		@media (min-width: $md1+px) {
+			padding: 22px 25px;
+		}
+	}
+	&._active {
+		z-index: 5;
+		.select__value {
+			&:before {
+				transform: rotate(-180deg);
+			}
+		}
+		.select__options {
+			display: block;
+		}
+	}
+}
+//<INPUT (inp+tab)>====================================================================================================
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+}
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="number"],
+textarea {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	&:focus {
+		outline: none;
+	}
+	&::-webkit-scrollbar {
+		width: 6px;
+	}
+	&::-webkit-scrollbar-track {
+		background: #e5e5e5;
+	}
+	&::-webkit-scrollbar-thumb {
+		background: #000;
+		width: 100%;
+	}
+	&::-webkit-scrollbar-thumb:hover {
+		background: #000;
+	}
+}
+.input {
+	border-radius: 0 !important;
+	width: 100%;
+	display: block;
+	padding: 18.5px 25px;
+	border: 1px solid #b3b3b3;
+	font-weight: 500;
+	@include adaptiv-value("font-size", 18, 15, 1);
+	@media (max-width: $md4+px) {
+		padding: 17px 25px;
+	}
+	&._focus {
+		border-color: $mainColor;
+	}
+	&._error {
+		border-color: #da2727;
+	}
+}
+textarea.input {
+	resize: none;
+	padding: 0px 0px;
+}
+//<OPTIONS (opt+tab)>====================================================================================================
+.options {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 10px -3px 0px;
+  @media (min-width: $md4+px) {
+    justify-content: center;
+    margin: 10px -5px 0px;
+  }
+	@media (min-width: $md2+px) {
+    margin: 15px -5px 0px;
+  }
+	// .options__item
+	&__item {
+    @include adaptiv-value("flex-basis", 62, 42, 1);
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		justify-content: center;
+		@include adaptiv-value("min-height", 62, 42, 1);
+    margin: 0 3px 5px;
+		position: relative;
+		cursor: pointer;
+		border: 1px solid #b3b3b3;
+		color: #999999;
+		font-weight: 500;
+    @media (min-width: $md4+px) {
+      margin: 0 5px 10px;
+    }
+    @media (max-width: $md4+px) {
+      flex-grow: 1;
+    }
+	}
+	// .options__input
+	&__input {
+		position: absolute;
+		width: 0;
+		height: 0;
+		opacity: 0;
+		left: 0;
+		top: 0;
+		visibility: hidden;
+		&:checked {
+			& + label {
+				color: $mainColor;
+				border-color: $mainColor;
+				&::before {
+					transform: scale(1);
+				}
+			}
+		}
+	}
+	// .options__day
+	&__day {
+		text-transform: uppercase;
+		@include adaptiv-value("font-size", 18, 13, 1);
+		&:not(:last-child) {
+			margin: 0px 0px 12px/18px * 1em 0px;
+		}
+	}
+	// .options__date
+	&__date {
+		@include adaptiv-value("font-size", 12, 10, 1);
+	}
+	label {
+		position: relative;
+		transition: border-color 0.3s ease 0s, color 0.3s ease 0s;
+		&::before {
+			transform: scale(0);
+			content: "\e906";
+			@extend %ic;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			position: absolute;
+			top: -5px;
+			right: -5px;
+			font-size: 7px;
+			color: $additionalColor;
+			width: 15px;
+			height: 15px;
+			background-color: $mainColor;
+			border-radius: 50%;
+			transition: all 0.3s ease 0s;
+		}
+	}
+}
